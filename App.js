@@ -26,7 +26,7 @@ export default function App() {
       <View style={styles.goalsContainer}>
         <FlatList
           data={courseGoals}
-          keyExtractor={(item, index) => item.key}
+          keyExtractor={(item, index) => item.id}
           alwaysBounceVertical={false}
           renderItem={(itemData) => {
             return (
